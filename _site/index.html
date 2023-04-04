@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>The Ng911Lib Class Library </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="The Ng911Lib Class Library ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="the-ng911lib-class-library">The Ng911Lib Class Library</h1>
+
+<p>The Ng911Lib project is a class library that provides a set of classes for the data schemas required for implementing Next Generation 9-1-1 (NG9-1-1) applications. This class library provides classes that enable application developers to create, serialize and deserialize JSON and XML documents used in NG9-1-1.</p>
+<p>This portable, cross-platform class library is written in the C# language and the library package targets the .NET 7.0 environment. It may be used by applications that target the Windows (version 10 or later) or Linux operating systems.</p>
+<p>The following document specifies the design and functional requirements of various functional elements as well as the protocols and interfaces required for those functional elements to communicate with each other.</p>
+<blockquote>
+<p><a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-010.3b-2021_i3_stan.pdf">NENA i3 Standard for Next Generation 9-1-1</a>, National Emergency Number Association (NENA) 911 Core Services Committee, i3 Architecture Working Group, NENA-STA-010.3b-2021, October 7, 2021.</p>
+</blockquote>
+<h2 id="json-schemas-defined-in-nena-sta-0103b">JSON Schemas Defined in NENA-STA-010.3b</h2>
+<p>Appendix E of NENA-STA-010.3b contains the REST/JSON schema definitions specific to NG9-1-1.</p>
+<table>
+<thead>
+<tr>
+<th>NENA-STA-010.3b Appendix</th>
+<th>NENA-STA-010.3b Sections</th>
+<th>NG911Lib Namespaces</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E.1 Policy Store</td>
+<td>3.3.1, 3.3.3</td>
+<td>PolicyStore, PolicyRouting</td>
+<td>Data/model classes for implementing a policy store service and policy routing rules</td>
+</tr>
+<tr>
+<td>E.2 Discrepancy Report</td>
+<td>3.7</td>
+<td>DiscrepancyReporting</td>
+<td>Data/model classes for implementing the client side of the discrepancy reporting service. These classes can be used by the different functional elements within a NG9-1-1 system.</td>
+</tr>
+<tr>
+<td>E.3 Dequeue Registration</td>
+<td>4.2.1.4</td>
+<td>I3SubNot</td>
+<td>Data/model classes for all SIP NG9-1-1 subscribe/notify interfaces</td>
+</tr>
+<tr>
+<td>E.4 MSAG Conversion Service</td>
+<td>4.4.1</td>
+<td>Msag</td>
+<td>Data/model classes for the Master Street Address Guide (MSAG) conversion service</td>
+</tr>
+<tr>
+<td>E.5 Geocode Conversion Service</td>
+<td>4.5.1, 4.5.2</td>
+<td>Geocode</td>
+<td>Data/model classes for the geocode conversion service</td>
+</tr>
+<tr>
+<td>E.6 Test Call</td>
+<td>4.6.18, 4.6.17.1</td>
+<td>TestCall</td>
+<td>Data/model classes for the NG9-1-1 test call generator</td>
+</tr>
+<tr>
+<td>E.7 Additional Data Repository</td>
+<td>4.11</td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>E.8 Logging Service</td>
+<td>4.12.3</td>
+<td>I3LogEvents</td>
+<td>Data/model classes for NG9-1-1 logging</td>
+</tr>
+<tr>
+<td>E.9 Bad Actor Service</td>
+<td>4.1.2</td>
+<td>BadActor</td>
+<td>Data/model classes for passing data to the bad actor service of a Border Control Function (BCF)</td>
+</tr>
+<tr>
+<td>E.10 Service/Agency Locator Service</td>
+<td>4.15</td>
+<td>AgencyLocator</td>
+<td>Data/model classes for the agency locator service interface</td>
+</tr>
+<tr>
+<td>E.11 Notify Bodies</td>
+<td>4.2.1.6, 4.3.4, 4.6.8, 2.4.1, 4.2.1.3, 2.4.2</td>
+<td>I3SubNot</td>
+<td>Data/model classes for all SIP NG9-1-1 subscribe/notify interfaces. The subscribe/notify event packages include ESRP Notify, Abandoned Call, Element State, Service State, and Queue State</td>
+</tr>
+<tr>
+<td>E.11.4 Common YAML</td>
+<td>NA</td>
+<td>Ng911Common</td>
+<td>Data/model classes used by all REST/JSON schemas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="xml-schemas-required-in-nena-sta-0103b">XML Schemas Required in NENA-STA-010.3b</h2>
+<p>Many of the schemas used in NG9-1-1 are specified by standards produced by the Internet Engineering Task Force (IETF)</p>
+<table>
+<thead>
+<tr>
+<th>Ng911Lib Namespace</th>
+<th>Related Standards</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AdditionalData</td>
+<td>RFC 7852 and others. See <a href="articles/WorkingWithAdditionalData.html">Working with Additional Data</a></td>
+<td>Data/Model classes for dealing with additional data for NG9-1-1 calls</td>
+</tr>
+<tr>
+<td>CommonAlertingProtocol</td>
+<td><a href="http://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2-os.pdf">Common Alerting Protocol Version 1.2 OASIS Standard</a></td>
+<td>Data/model classes for handling Common Alerting Protocol (CAP) calls</td>
+</tr>
+<tr>
+<td>ConferenceEvent</td>
+<td>RFC 4575 SIP Event Package for Conference State</td>
+<td>Data/model classes for the subscribe/notify SIP interface for conference state</td>
+</tr>
+<tr>
+<td>Held</td>
+<td>RFC 5985 HTTP-Enabled Location Delivery (HELD)</td>
+<td>Data/model classes for requesting and receiving location information</td>
+</tr>
+<tr>
+<td>Lost</td>
+<td>RFC 5222 LoST: A Location-to-Service Translation Protocol</td>
+<td>Data/model and utility classes for interfacing to an Emergency Call Routing Function (ECRF) using the LoST protocol</td>
+</tr>
+<tr>
+<td>Pidf</td>
+<td>RFC 4119, RFC 5491 and others. See <a href="articles/WorkingwithPIDF-LOData.html">Working with PIDF-LO Data</a></td>
+<td>Data/model and utility classes for dealing with location data in NG9-1-1 applications</td>
+</tr>
+<tr>
+<td>SipRecMetaData</td>
+<td>RFC 7865 Session Initiation Protocol (SIP) Recording Metadata</td>
+<td>Data/model classes for dealing with the meta data XML document used in the SIP Session Recording (SIPREC) protocol</td>
+</tr>
+<tr>
+<td>ECall</td>
+<td>RFC 8147 Next-Generation Pan-European eCall</td>
+<td>Model classes that implement the control and meta-data schemas defined in RFC 8147. Note: These classes do not support the European Minimum Set Data (MSD).</td>
+</tr>
+<tr>
+<td>Veds</td>
+<td>RFC 8148 Next-Generation Vehicle-Initiated Emergency Calls, Advanced Automatic Collision Notification (AACN) Vehicle Emergency Data Set (VEDS) <a href="https://www.apcointl.org/%7Edocuments/standard/21021-2022-aacn-vehicle-data-set-veds">APCO/NENA Candidate ANS 2.102.1.2022</a></td>
+<td>Data/Model classes for the Vehicle Emergency Data Set (VEDS) used in NG9-1-1 Advanced Automatic Crash Notification (AACN) calls</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

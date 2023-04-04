@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="UtilityClasses.html" title="Utility Classes" class="">Utility Classes</a>
+                    </li>
+                    <li class="">
+                      <a href="WorkingwithPIDF-LOData.html" title="Working with PIDF-LO Data" class="">Working with PIDF-LO Data</a>
+                    </li>
+                    <li class="active">
+                      <a href="WorkingWithAdditionalData.html" title="Working with Additional Data" class="active">Working with Additional Data</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p>In NG9-1-1 applications, additional data refers to data such as information about the subscriber or the device that was used to place the emergency call.</p>
+<p>The following document describes five different blocks of additional data about a call and defines the XML schemas for each of these data blocks.</p>
+<blockquote>
+<p>RFC 7852 Additional Data Related to an Emergency Call</p>
+</blockquote>
+<p>NENA has defined two additional data blocks in the following document.</p>
+<blockquote>
+<p><a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-012.2_addldata_2017.pdf">NENA Standard for NG9 1 1 Additional Data</a>, National Emergency Number Association (NENA), NENA-STA-012.2-2017, November 29, 2017.</p>
+</blockquote>
+<p>Additional data may be delivered with a call by-value within the body of a SIP INVITE request. It may also be delivered by-reference by including SIP Call-Info headers that contain a URIs that can be used to retrieve the data via an HTTP GET request. RFC 7852 describes the mechanism and protocols that must be used to deliver additional data.</p>
+<p>The AdditionalData namespace provides data/model classes that can be used for serialization and deserialization of additional data XML documents.</p>
+<h1 id="the-additionaldata-namespace">The AdditionalData Namespace</h1>
+<p>This namespace contains data classes for additional data for an emergency call. RFC 7852 defines the first five blocks of additional data listed in the following table. NENA-STA-012.2 defines the last two blocks in the list.</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>AdditionalData Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subscriber Information</td>
+<td><a href="../api/AdditionalData.SubscriberInfoType.html">SubscriberInfoType</a></td>
+<td>Describes the owner of the device (if provided by the device) and the subscriber information (if provided by a service provider). Also may contain a contact location that is not necessarily the location of the caller or incident but is rather the nominal contact address.</td>
+</tr>
+<tr>
+<td>Service Information</td>
+<td><a href="../api/AdditionalData.ServiceInfoType.html">ServiceInfoType</a></td>
+<td>Describes the service that the service provider provides to the caller. This information includes the service environment (business, residence), service type (wireless, landline, etc.), service mobility (mobile, fixed, etc.) and other information.</td>
+</tr>
+<tr>
+<td>Device Information</td>
+<td><a href="../api/AdditionalData.DeviceInfoType.html">DeviceInfoType</a></td>
+<td>Provides information about the device that was used to place the emergency call.</td>
+</tr>
+<tr>
+<td>Data Provider Information</td>
+<td><a href="../api/AdditionalData.ProviderInfoType.html">ProviderInfoType</a></td>
+<td>This block of data contains identification and contact information about the provider of one or more of additional data blocks about the emergency call.</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td><a href="../api/AdditionalData.CommentType.html">CommentType</a></td>
+<td>This block provides a mechanism for the data provider to supply extra, human-readable information.</td>
+</tr>
+<tr>
+<td>Caller Information</td>
+<td><a href="../api/AdditionalData.CallerInfo.html">CallerInfo</a></td>
+<td>Additional data about the caller. Defined in NENA-STA-012.2</td>
+</tr>
+<tr>
+<td>Location Information</td>
+<td><a href="../api/AdditionalData.LocationInfo.html">LocationInfo</a></td>
+<td>Additional data about the location from which the emergency call was made. Defined in NENA-STA-012.2</td>
+</tr>
+</tbody>
+</table>
+<h1 id="the-vcardtype-class">The vcardType Class</h1>
+<p>In NG9-1-1 applications, the term &quot;vCard&quot; refers to the XML schema of the vCard defined in RFC 6350. RFC 6351 defines the XML schema using Relax NG notation. Appendix A of RFC 7852. Occasionally, the term xCard refers to the XML schema for the vCard.</p>
+<p>The name of the model class for a vCard is vcardType. The <a href="../api/AdditionalData.vcardType.html">vcardType</a> class contains information about a person that is in some way related to to an additional data block. For example, the SubscriberData field of the SubscriberInfoType class is an array of vcardType objects. The information in this array contains information information about the individual subscribers to the telephone service that was used to make the emergency call.</p>
+<p>The vcardType class was automatically generated using the Visual Studio utility application called xsd.exe from the XML Schema Definition (XSD) file shown in Appendix A of RFC 7852.</p>
+<h2 id="vcardtype-class-helper-properties">vcardType Class Helper Properties</h2>
+<p>The XSD file for the vcardType specifies that just about every element is an array of elements. For example, the element for name is called &quot;n&quot; Within the &quot;n&quot; element, elements for first, surname, etc. are all specified as arrays of strings. While this provides flexibility, it creates a somewhat difficult to use programming interface. The following code snippet shows what is required to set the name for a vcardType object.</p>
+<pre><code>vcardType vc = new vcardType();
+vc.n = new n();
+vc.n.surname = new string[1];
+vc.n.surname[1] = &quot;Doe&quot;;
+vc.n.given = new string[1];
+vc.n.given[1] = &quot;John&quot;;
+</code></pre>
+<p>Several helper properties have been added to the vcardType class to simplify the programming interface for this class. See the following table for a list of the helper properties. The helper properties focus on what is believed to be the most commonly used aspects of the subject of a vCard in NG9-1-1 applications. These are the name, address, telephone and e-mail address.</p>
+<p>Each helper property is flagged with an XmlIgnore attribute so that it is not serialized or deserialized. Each helper property assumes that only the first element in an array is of interest. The setter for the property automatically creates the array and assigns the first element to the value parameter. The getter for the property returns the first element in the array or null if the array field is null or empty.</p>
+<p>The following code snippet is an example of how to set the last and first names in a vcardType object using the helper properties.</p>
+<pre><code>vcardType vc = new vcardType();
+vc.LastName = &quot;Doe&quot;;
+vc.FirstName = &quot;John&quot;;
+</code></pre>
+<p>The property names in several cases have been changed to make the interface more intuitive. For example, &quot;surname&quot; has been changed to &quot;LastName&quot; and &quot;given&quot; has been changed to &quot;FirstName&quot;.</p>
+<table>
+<thead>
+<tr>
+<th>vcardType Helper Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>City</td>
+<td>Gets or sets the first locality (city) of the first address in the vcardType</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>Gets or sets the country element of the first address in the vcardType</td>
+</tr>
+<tr>
+<td>EMail</td>
+<td>Gets or sets the first email address</td>
+</tr>
+<tr>
+<td>Ext</td>
+<td>Gets or sets the extended (ext) address field of the first address in the vcard</td>
+</tr>
+<tr>
+<td>FirstName</td>
+<td>Gets or sets the first (given) name</td>
+</tr>
+<tr>
+<td>FullName</td>
+<td>Gets or sets the first fn (formatted full name) field of the vcardType</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>Gets or sets the last name (surname)</td>
+</tr>
+<tr>
+<td>MiddleName</td>
+<td>Gets or sets the middle name</td>
+</tr>
+<tr>
+<td>PoBox</td>
+<td>Gets or sets the first pobox element of the first address in the vcard</td>
+</tr>
+<tr>
+<td>Prefix</td>
+<td>Gets or sets the first name prefix (Mr., Mrs., Ms., etc)</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Gets or sets the first region (state) in the first address of the vcard</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>Gets or sets the first street address field of the first address in the vcardType</td>
+</tr>
+<tr>
+<td>Suffix</td>
+<td>Gets or sets the first suffix field of the n element</td>
+</tr>
+<tr>
+<td>TelephoneNumber</td>
+<td>Gets or sets the first telephone number in the vcardType. Telephone numbers are treated as 10-digit numeric strings by this property.</td>
+</tr>
+<tr>
+<td>ZipCode</td>
+<td>Gets or sets the first code (zip code) element of the first address in the vcardType</td>
+</tr>
+</tbody>
+</table>
+<h2 id="adr-class-helper-properties">adr Class Helper Properties</h2>
+<p>The &quot;adr&quot; class is used in the vcardType class to represent an address. As with most other fields in the vcardType, all elements within this class are defined as arrays. The following table lists the helper properties that have been added to the adr class to simplify the programming interface.</p>
+<table>
+<thead>
+<tr>
+<th>adr Helper Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Address Type</td>
+<td>Gets or sets the first type field value for the address.</td>
+</tr>
+<tr>
+<td>City</td>
+<td>Gets or sets the first City (locality) field.</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>Gets or sets the first country field.</td>
+</tr>
+<tr>
+<td>Ext</td>
+<td>Gets or sets the first ext (extended address information) field. This field can contain extended address information such as suite numbers, etc.</td>
+</tr>
+<tr>
+<td>PoBox</td>
+<td>Gets or sets the first pobox field</td>
+</tr>
+<tr>
+<td>Pref</td>
+<td>Gets or sets the pref (preference) value of the adr object. The preference is an integer greater than 1 stored as a string.</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Gets or sets the first State (region) field.</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>Gets or sets the first street field. The street field is the full street address that includes house number, street name and any prefixes and suffixes.</td>
+</tr>
+<tr>
+<td>ZipCode</td>
+<td>Gets or sets the first ZipCode (code) field.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="the-jcard-class">The JCard Class</h1>
+<p>In NG9-1-1 applications, interfaces that use XML use the XML version of the vCard. Interfaces that use JSON use the JSON version of the vCard, which is called the jCard. The following document specifies the schema of the jCard.</p>
+<blockquote>
+<p>RFC 7095 jCard: The JSON Format for vCard</p>
+</blockquote>
+<p>The following code snippet is an example of a jCard.</p>
+<pre><code>[&quot;vcard&quot;,
+  [
+    [&quot;version&quot;, {}, &quot;text&quot;, &quot;4.0&quot;],
+    [&quot;fn&quot;, {}, &quot;text&quot;, &quot;John Doe&quot;],
+    [&quot;gender&quot;, {}, &quot;text&quot;, &quot;M&quot;],
+    [&quot;categories&quot;, {}, &quot;text&quot;, &quot;computers&quot;, &quot;cameras&quot;],
+    [&quot;adr&quot;, {}, &quot;text&quot;,
+      [
+        &quot;&quot;, &quot;&quot;, &quot;123 Main Street&quot;,
+        &quot;Any Town&quot;, &quot;CA&quot;, &quot;91921-1234&quot;, &quot;U.S.A.&quot;
+      ]
+    ]
+  ]
+]
+</code></pre>
+<p>Instead of named property/value pairs, RFC 7095 defines everything as an array of variable length arrays. Even the root element is an array instead of an object delimited by curly brackets (as is typical of JSON objects).</p>
+<p>In order to simplify the programming interface for a jCard, the AdditionalData namespece provides a class called <a href="../api/AdditionalData.JCard.html">JCard</a>. JCard is a static class that converts between a jCard string and a vcardType object for deserialization and converts between a vcardType object and a jCard string for serialization. The JCard class has the following public methods.</p>
+<pre><code>public static vcardType JCardStringToVCardType(string strJcard);
+public static string XcardToJsonString(vcardType vcard);
+</code></pre>
+<p>When an application receives a jCard as a string, it can used the JCardStringToVCardType() method of the JCard class to convert the JSON string to a vcardType object. Then it can read the information about the entity represented in the vCard (xCard) using the properties and fields of the vcardType class.</p>
+<p>When an application needs to create a jCard string, it performs the following steps.</p>
+<ol>
+<li>Create a vcardType object</li>
+<li>Set the properties and fields of the vcardType object</li>
+<li>Call the XcardToJsonString() method of the JCard class to produce a string containing the jCard JSON object.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

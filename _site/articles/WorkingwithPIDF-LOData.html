@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="active">
+                      <a href="WorkingwithPIDF-LOData.html" title="Working with PIDF-LO Data" class="active">Working with PIDF-LO Data</a>
+                    </li>
+                    <li class="">
+                      <a href="WorkingWithAdditionalData.html" title="Working with Additional Data" class="">Working with Additional Data</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p>All location information in NG9-1-1 applications uses the Presence Information Data with Format Location Object (PIDF-LO) XML schemas for location information. Many functional elements within an NG9-1-1 network need to handle PIDF-LO XML location data. For example, PIDF-LO XML documents may be passed by-value or by-reference within a SIP INVITE message when a call is delivered to a Public Service Answering Point (PSAP). The PSAP system needs to deserialize the PIDF-LO XML document into appropiate classes so that it may extract location information that can be displayed to a call taker. An Emergency Call Routing Function (ECRF) receives PIDF-LO XML data in a LoST request so it can determine how to route calls. A NG9-1-1 originating service provider must determine the location of a caller and build a PIDF-LO XML document that it can provide with the call that it delivers to the emergency services network.</p>
+<p>The Pidf namespace contains classes for parsing and generating PIDF-LO XML documents.</p>
+<p>The following table lists the RFCs that must be supported by NG9-1-1 applications. The &quot;Level of Support&quot; column indicates which portions of each RFC are supported by the classes in the Pidf namespace.</p>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Title</th>
+<th>Description</th>
+<th>Level of Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RFC 3863</td>
+<td>Presence Information Data Format (PIDF)</td>
+<td>Defines the basic presence schema</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>RFC 4119</td>
+<td>A Presence-based GEOPRIV Location Object Format</td>
+<td>Defines the civic address and basic geopriv element schemas. Specifies use of the element and extends RFC 3863.</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>OGC 06-142r1</td>
+<td>GML 3.1.1 PIDF-LO Shape Application Schema for use by the Internet Engineering Task Force (IETF)</td>
+<td>Defines the application schema for the Geography Markup Language (GML). Contains definitions two dimentional shapes (point, polygon, circle, ellipse and arc band) and three dimensional shapes (sphere, ellipsoid and prism).</td>
+<td>Full Support for both 2D and 3D profiles</td>
+</tr>
+<tr>
+<td>RFC 4479</td>
+<td>A Data Model for Presence</td>
+<td>Defines the data model for the device and person elements of the presence XML document.</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>RFC 5139</td>
+<td>Revised Civic Location Format for Presence Information Data Format Location Object (PIDF-LO)</td>
+<td>Updates RFC 4119 and revises the civic address schema.</td>
+<td>Full Support</td>
+</tr>
+<tr>
+<td>RFC 5491</td>
+<td>GEOPRIV Presence Information Data Format Location Object (PIDF-LO) Usage Clarification, Considerations, and Recommendations</td>
+<td>Updates RFC 4119.</td>
+<td>Full support except that this RFC states that there may be an unbounded number of tuple, device or person elements in a presence XML document. This class library assumes that there will be only one of each type of subelement. This class library does support multiple locations.</td>
+</tr>
+<tr>
+<td>RFC 5962</td>
+<td>Dynamic Extensions to the Presence Information Data Format Location Object (PIDF-LO)</td>
+<td>Defines the Dynamic element in the location-info element that provide heading, orientation and elevation angle of the object whose location is specified in the XML document.</td>
+<td>Full Support</td>
+</tr>
+<tr>
+<td>RFC 6848</td>
+<td>Specifying Civic Address Extensions in the Presence Information Data Format Location Object (PIDF-LO)</td>
+<td>Defines extensions for the following elements: PN (Post Number), MP (Milepost), STP (Street Type Prefix) and HNP (House Number Prefix).</td>
+<td>Supports the defined extensions for the following elements: PN (Post Number), MP (Milepost), STP (Street Type Prefix) and HNP (House Number Prefix). Also provides support for future extensions via an XML extension point.</td>
+</tr>
+<tr>
+<td>RFC 7459</td>
+<td>Representation of Uncertainty and Confidence in the Presence Information Data Format Location Object (PIDF-LO)</td>
+<td>Defines an element called confidence for the location-info element.</td>
+<td>Full Support</td>
+</tr>
+</tbody>
+</table>
+<p>The actual structure of a PIDF-LO XML document is quite complicated because a complete document can contain elements defined in a large number of standards spanning many different XML namespaces. For example, the Circle element is part of the pidflo namespace (<a href="http://www.opengis.net/pidflo/1.0">http://www.opengis.net/pidflo/1.0</a>), but pos sub-elements of a Circle are part of the gml namespace (<a href="http://www.opengis.net/gml">http://www.opengis.net/gml</a>). Failure to correctly specify the XML namespaces when building a presence XML document will result in incompatibilites across different applications. The classes in the Pidf namespace can help application developers manage these complexities.</p>
+<h1 id="structure-of-pidf-lo-location-data">Structure of PIDF-LO Location Data</h1>
+<p>The following figure shows the basic structure of a PIDF-LO XML document. This figure shows a simplified version of the XML document with many elements and all attributes omitted.</p>
+<pre><code>&lt;presence&gt;
+    &lt;tuple&gt;
+        &lt;status&gt;
+            &lt;geopriv&gt;
+                &lt;location-info&gt;&lt;/location-info&gt;
+            &lt;/geopriv&gt;
+        &lt;/status&gt;
+    &lt;/tuple&gt;
+    &lt;device&gt;
+        &lt;geopriv&gt;
+            &lt;location-info&gt;&lt;/location-info&gt;
+        &lt;/geopriv&gt;
+    &lt;/device&gt;
+    &lt;person&gt;
+        &lt;geopriv&gt;
+            &lt;location-info&gt;&lt;/location-info&gt;
+        &lt;/geopriv&gt;
+    &lt;/person&gt;
+&lt;/presence&gt;
+
+</code></pre>
+<p>The root element of a PIDF-LO XML document is the presence element. The presence element may contain tuple, device and person elements. A tuble element is a general purpose container for location information that was defined in RFC 3863. In addition to the status sub-element, the tuple element contains an &quot;id&quot; attribute, a timestamp element and a contact element. The &quot;id&quot; attribute uniquely identifies the tuple element. The timestamp element specifies the time of the location information and the contact element may contain a URI which may be used to contact the entity that the location pertains to.</p>
+<p>RFC 4479 defines the device and the person elements, which also contain location information. The device element contains location information about the device from which the emergency call was made and the person element contains location information for the person making the call, which may be a different location in certain cases described in RFC 5491.</p>
+<p>RFC 5491 states that there may be an unbounded number of tuple, device or person elements in a presence XML document. This class library assumes that there will be only one of each type of subelement. This class library does support multiple locations. See <a href="#handling-multiple-locations">Handling Multiple Locations</a>, below.</p>
+<p>The location-info element contains the actual location data and it has the following structure.</p>
+<pre><code>&lt;location-info&gt;
+    &lt;civicAddress&gt;&lt;/civicAddress&gt;
+    &lt;Point&gt;&lt;/Point&gt;
+    &lt;Circle&gt;&lt;/Circle&gt;
+    &lt;Ellipse&gt;&lt;/Ellipse&gt;
+    &lt;ArcBand&gt;&lt;/ArcBand&gt;
+    &lt;Polygon&gt;&lt;/Polygon&gt;
+    &lt;Sphere&gt;&lt;/Sphere&gt;
+    &lt;Ellipsoid&gt;&lt;/Ellipsoid&gt;
+    &lt;Prism&gt;&lt;/Prism&gt;
+    &lt;confidence&gt;&lt;/confidence&gt;
+    &lt;Dynamic&gt;&lt;/Dynamic&gt;
+&lt;/location-info&gt;
+</code></pre>
+<p>One or more of the subelements of a location-info will be present. When more than one element is present, the location-info element will typically contain a civicAddress element and one of the geodetic location elements such as Point, Circle, etc.</p>
+<p>The <a href="../api/Pidf.locInfoType.html">locInfoType</a> class maps to the location-info element (see below). If a subelement of the location-info element is not present then the corresponding property of the locInfoType will be null.</p>
+<h1 id="mapping-class-names-to-element-names">Mapping Class Names to Element Names</h1>
+<p>Each element in a PIDF-LO XML document maps to a C# class. In general, class names match or nearly match the element names. The following table shows the class name to element name mappings for several of the key elements.</p>
+<table>
+<thead>
+<tr>
+<th>Element Name</th>
+<th>Class Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>presence</td>
+<td><a href="../api/Pidf.Presence.html">Presence</a></td>
+<td>This is the root element of a PIDF-LO XML document</td>
+</tr>
+<tr>
+<td>tuple</td>
+<td><a href="../api/Pidf.Tuple.html">Tuple</a></td>
+<td>Container element of a status element</td>
+</tr>
+<tr>
+<td>status</td>
+<td><a href="../api/Pidf.Status.html">Status</a></td>
+<td>Container element for a geopriv element</td>
+</tr>
+<tr>
+<td>geopriv</td>
+<td><a href="../api/Pidf.GeoPriv.html">GeoPriv</a></td>
+<td>Contains the location-info element which has the actual location information. Also has elements called usage-rules, method and provided-by. The usage-rules element specifies basic policy for how the location information may be used. The method subelement specifies the type of technology used to determine the location information. The provided-by element may contain additional data about the call.</td>
+</tr>
+<tr>
+<td>location-info</td>
+<td><a href="../api/Pidf.locInfoType.html">locInfoType</a></td>
+<td>Contains civic address location and/or geodetic location information.</td>
+</tr>
+<tr>
+<td>civicAddress</td>
+<td><a href="../api/Pidf.CivicAddress.html">CivicAddress</a></td>
+<td>Contains street address, city, county, state and country of the location</td>
+</tr>
+<tr>
+<td>Point</td>
+<td><a href="../api/Pidf.Point.html">Point</a></td>
+<td>Specifies the location as a point using latitude and longitude</td>
+</tr>
+<tr>
+<td>Circle</td>
+<td><a href="../api/Pidf.Circle.html">Circle</a></td>
+<td>Describes the locaton as a circle with a latitude and longitude that specify the center and a radius in meters.</td>
+</tr>
+<tr>
+<td>Ellipse</td>
+<td><a href="../api/Pidf.Ellipse.html">Ellipse</a></td>
+<td>Specifies the location as an ellipse.</td>
+</tr>
+<tr>
+<td>ArcBand</td>
+<td><a href="../api/Pidf.ArcBand.html">ArcBand</a></td>
+<td>Specifies the location as an arc band.</td>
+</tr>
+<tr>
+<td>Sphere</td>
+<td><a href="../api/Pidf.Sphere.html">Sphere</a></td>
+<td>Specifies the location as a three dimensional sphere.</td>
+</tr>
+<tr>
+<td>Ellipsoid</td>
+<td><a href="../api/Pidf.Ellipsoid.html">Ellipsoid</a></td>
+<td>Specifies the location as a three dimensional ellipsoid.</td>
+</tr>
+<tr>
+<td>Prism</td>
+<td><a href="../api/Pidf.Prism.html">Prism</a></td>
+<td>Specifies the location as a three dimensional prism. The base of the prism is a polygon.</td>
+</tr>
+<tr>
+<td>confidence</td>
+<td><a href="../api/Pidf.Confidence.html">Confidence</a></td>
+<td>Provides a measure of the certainty or confidence that the location information is accurate.</td>
+</tr>
+<tr>
+<td>Dynamic</td>
+<td><a href="../api/Pidf.DynamicType.html">DynamicType</a></td>
+<td>Provides the heading (direction of motion), orientation (direction that the object is pointing) and elevation angle of the object whose location is provided in the location-info element</td>
+</tr>
+</tbody>
+</table>
+<p>Subelements of an element are represented as C# properties of the class associated with the element. Attributes of an element are also represented as C# properties of the class associated with the element.</p>
+<h1 id="the-pos-element-and-the-position-class">The pos Element and the Position Class</h1>
+<p>The pos element represents individual points in other location subelements of the location-info element. For example, a Point element contains a single pos element. A Circle element contains a pos element that defines the location of the center of a circle.</p>
+<p>The pos element is defined as a string list of double precision numbers in the XML schema defination. Values are separated by a single space. The string contains latitude, longitude and potentially elevation information. A pos element for a point in two dimensions will look like:</p>
+<pre><code>&lt;pos&gt;42.5463 -73.2512&lt;/pos&gt;
+</code></pre>
+<p>A pos element for a point in three dimensions will look like:</p>
+<pre><code>&lt;pos&gt;42.5463 -73.2512 100&lt;/pos&gt;
+</code></pre>
+<p>The first value is the latitude, the second value is the longitude and the third value is tha altitude above sea level in meters (by default for NG9-1-1 applications).</p>
+<p>Since this schema presents an awkward programming interface, the Pidf namespace provides a class called <a href="../api/Pidf.Position.html">Position</a> that provides helper properties called Latitude, Longitude and Altitude. This class implements a custom serializer and deserializer (via an implementation of the System.Xml.Serialization.IXmlSerializable interface) and handles the converstion between a string list of double values and the Latitude, Longitude and Altitude properties. All geodetic element types in the location-info (i.e., Point, Circle, etc.) element use the Position class.</p>
+<h1 id="parsing-a-pidf-lo-xml-document">Parsing a PIDF-LO XML Document</h1>
+<p>A PIDF-LO XML document may be delivered with an NG9-1-1 call as part of the SIP INVITE message body (by-value) or it may be obtained from a request to a Location Information Server (LIS) using the HELD protocol. In either case, the XML document may be received as a C# string object or converted to a C# string object. The XmlHelper class can then be used to deserialize the string into a Presence class as follows.</p>
+<pre><code>Presence presence = XmlHelper.DeserializeFromString&lt;Presence&gt;(strData);
+</code></pre>
+<p>The DeserializeFromString function will return a Presence object if the input string is a valid presence XML document. If the input string is not a valid presence XML document then this function will return null, so be sure to check if the return value is not null before attempting to use it.</p>
+<p>If you have a need to troubleshoot problems with deserialization, you can use the following override of the DeserializeFromString function.</p>
+<pre><code>Exception Ex;
+Presence presence = XmlHelper.DeserializeFromString&lt;Presence&gt;(strData, out Ex);
+</code></pre>
+<p>If the above function returns null, the value of the Ex variable will be non-null. You call Ex.ToString() to get the entire exception data including the call stack that can be written to a log file for troubleshooting purposes.</p>
+<h1 id="generating-and-serializing-a-pidf-lo-xml-document">Generating and Serializing a PIDF-LO XML Document</h1>
+<p>The following code creates a Presence object with a Tuple element.</p>
+<pre><code>Presence pres = Presence.CreateTuplePresence(&quot;12345&quot;);
+pres.tuple.status.geopriv.LocationInfo.Circle = new Circle(42.5463, -73.2512, 100);
+
+</code></pre>
+<p>The Presence can then be serialized to a string containing a properly formed XML document as follows.</p>
+<pre><code>string strPres = XmlHelper.SerializePidfToString(pres);
+</code></pre>
+<p>The SerializePidfToString() method of the <a href="../api/Ng911Lib.Utilities.XmlHelper.html">XmlHelper</a> class adds the XML element prefix tags appropriate to all of various namespaces the encompass the elements of a PIDF-LO XML document. The resulting XML will be as follows.</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;presence xmlns:gs=&quot;http://www.opengis.net/pidflo/1.0&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; xmlns:ca=&quot;urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr&quot; xmlns:gp=&quot;urn:ietf:params:xml:ns:pidf:geopriv10&quot; xmlns:dm=&quot;urn:ietf:params:xml:ns:pidf:data-model&quot; xmlns:gbp=&quot;urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy&quot; xmlns:con=&quot;urn:ietf:params:xml:ns:geopriv:conf&quot; xmlns:dyn=&quot;urn:ietf:params:xml:ns:pidf:geopriv10:dynamic&quot; xmlns:cae=&quot;urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr:ext&quot; xmlns=&quot;urn:ietf:params:xml:ns:pidf&quot;&gt;
+  &lt;tuple id=&quot;12345&quot;&gt;
+    &lt;status&gt;
+      &lt;gp:geopriv&gt;
+        &lt;gp:location-info id=&quot;71a65425e2b54304a8551fb671cf3073&quot; profile=&quot;geodetic-2d&quot;&gt;
+          &lt;gs:Circle srsName=&quot;urn:ogc:def:crs:EPSG::4326&quot;&gt;
+            &lt;gml:pos&gt;42.5463 -73.2512&lt;/gml:pos&gt;
+            &lt;gs:radius uom=&quot;urn:ogc:def:uom:EPSG::9001&quot;&gt;100&lt;/gs:radius&gt;
+          &lt;/gs:Circle&gt;
+        &lt;/gp:location-info&gt;
+        &lt;gp:usage-rules&gt;
+          &lt;gbp:retransmission-allowed&gt;true&lt;/gbp:retransmission-allowed&gt;
+          &lt;gbp:retention-expiry&gt;2023-12-13T15:18:54.6695109-08:00&lt;/gbp:retention-expiry&gt;
+        &lt;/gp:usage-rules&gt;
+      &lt;/gp:geopriv&gt;
+    &lt;/status&gt;
+    &lt;timestamp&gt;2022-12-13T15:18:54.665592-08:00&lt;/timestamp&gt;
+  &lt;/tuple&gt;
+&lt;/presence&gt;
+</code></pre>
+<p>If you do not wish to add the element prefix tags, you can use the SerializeToString method of the XmlHelper class to get the following result.</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;presence xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;urn:ietf:params:xml:ns:pidf&quot;&gt;
+  &lt;tuple id=&quot;12345&quot;&gt;
+    &lt;status&gt;
+      &lt;geopriv xmlns=&quot;urn:ietf:params:xml:ns:pidf:geopriv10&quot;&gt;
+        &lt;location-info id=&quot;71a65425e2b54304a8551fb671cf3073&quot; profile=&quot;geodetic-2d&quot;&gt;
+          &lt;Circle srsName=&quot;urn:ogc:def:crs:EPSG::4326&quot; xmlns=&quot;http://www.opengis.net/pidflo/1.0&quot;&gt;
+            &lt;pos xmlns=&quot;http://www.opengis.net/gml&quot;&gt;42.5463 -73.2512&lt;/pos&gt;
+            &lt;radius uom=&quot;urn:ogc:def:uom:EPSG::9001&quot;&gt;100&lt;/radius&gt;
+          &lt;/Circle&gt;
+        &lt;/location-info&gt;
+        &lt;usage-rules&gt;
+          &lt;retransmission-allowed xmlns=&quot;urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy&quot;&gt;true&lt;/retransmission-allowed&gt;
+          &lt;retention-expiry xmlns=&quot;urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy&quot;&gt;2023-12-13T15:18:54.6695109-08:00&lt;/retention-expiry&gt;
+        &lt;/usage-rules&gt;
+      &lt;/geopriv&gt;
+    &lt;/status&gt;
+    &lt;timestamp&gt;2022-12-13T15:18:54.665592-08:00&lt;/timestamp&gt;
+  &lt;/tuple&gt;
+&lt;/presence&gt;
+</code></pre>
+<h1 id="handling-multiple-locations">Handling Multiple Locations</h1>
+<p>The location-info element may contain a civic address (street, city, state, etc.) and one of eight different shapes describing a geodetic location. The Point, Circle, Ellipse, ArcBand and Polygon elements describe location in two dimensions and the Sphere, Ellipsoid and Prism describe location in three dimensions. The location-info element may contain a single element describing location or it may contain two or more elements containing  location information. The XML schemas described in the RFCs do not impose any restrictions on the combination of location sub-elements within the location-info element. For instance, the location-info element might contain a civicAddress element and a Point element.</p>
+<p>In addition, a presence XML document can have three sub-elements and each of these sub-elements can contain one or more locations. The three elements that can contain location are the tuple, device and person elements.</p>
+<p>When an application receives a location included with a call in a SIP INVITE request, or when it receives location from a Location Information Server (LIS), it must deserialize the string into a Presence object and then it must determine what types of location are present and then it must decide which location to use (say for call routing or for display purposes).</p>
+<p>The Presence class has the following methods that seach the Presence document for location information.</p>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GetFirstCivicAddress</td>
+<td>CivicLocation</td>
+<td>Gets the first civic location found in the document. Returns null if no civic location is found.</td>
+</tr>
+<tr>
+<td>GetFirstCivicAddressLocation</td>
+<td>locInfoType</td>
+<td>Gets the first locInfoType (location-info element) containing a civic address. Returns null if no civic location is available.</td>
+</tr>
+<tr>
+<td>GetAllGeoPrivObjects</td>
+<td>List of GeoPriv objects</td>
+<td>Returns a list of all GeoPriv objects in the Presence object. Returns an empty list if there are no GeoPrive objects.</td>
+</tr>
+<tr>
+<td>GetFirstGeolocation</td>
+<td>locInfoType</td>
+<td>Returns the first locInfoType object that has a geodetic type of location. Returns null if no geodedic information is present.</td>
+</tr>
+<tr>
+<td>GetFirstGeoPriv</td>
+<td>GeoPriv</td>
+<td>Gets the first geopriv object. Returns null if no geodetic location is available.</td>
+</tr>
+<tr>
+<td>GetFirstGeoGeoPriv</td>
+<td>GeoPriv</td>
+<td>Gets the first GeoPriv object that has a geodetic shape in it. Returns null if no geodetic location is available.</td>
+</tr>
+<tr>
+<td>GetFirstCivicGeoPriv</td>
+<td>GeoPriv</td>
+<td>Gets the first GeoPriv object that contains a civic location. Returns null if no civic location information is available.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="the-geopriv-provided-by-element">The Geopriv provided-by Element</h1>
+<p>RFC 4119 originally defined a sub-element of the geopriv element called provided-by. Its original purpose was to contain information about the entity or organization that provided the location information.</p>
+<p>RFC 7852 redefined the schema of the provided-by sub-element of a geopriv element so that it can contain additional data about the call. Additional call data may be included either by-value and/or by-reference within the provided-by element. RFC 7852 defined five different types of additional data.</p>
+<table>
+<thead>
+<tr>
+<th>Additional Data Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comment</td>
+<td>Contains human readable comments that may be provided by a data provider.</td>
+</tr>
+<tr>
+<td>Device Information</td>
+<td>Provided information about the device that originated the emergency call.</td>
+</tr>
+<tr>
+<td>Provider Information</td>
+<td>Contains information about the entity or organization that provide one or more of the other additional data blocks.</td>
+</tr>
+<tr>
+<td>Service Information</td>
+<td>Contains information about the type of service (wireline, wireless, etc.)</td>
+</tr>
+<tr>
+<td>Subscriber Information</td>
+<td>Contains information about the individual subscriber to the service and device that placed the emergency call.</td>
+</tr>
+</tbody>
+</table>
+<p>This class library supports the schema of the provided-by element from RFC 7852. This is the schema that is used in NG9-1-1 applications.</p>
+<p>The AdditionalData namespace contains the classes for additional data.</p>
+<p>The following figure shows a simplified example of the provided-by element.</p>
+<pre><code>&lt;provided-by&gt;
+    &lt;EmergencyCallDataValue&gt;
+        &lt;EmergencyCallData.Comment&gt;&lt;/EmergencyCallData.Comment&gt;
+        &lt;EmergencyCallData.DeviceInfo&gt;&lt;/EmergencyCallData.DeviceInfo&gt;
+        &lt;EmergencyCallData.ProviderInfo&gt;&lt;/EmergencyCallData.ProviderInfo &gt;
+        &lt;EmergencyCallData.ServiceInfo&gt;&lt;/EmergencyCallData.ServiceInfo&gt;
+        &lt;EmergencyCallData.SubscriberInfo&gt;&lt;/EmergencyCallData.SubscriberInfo&gt;
+    &lt;/EmergencyCallDataValue&gt;
+    &lt;EmergencyCallDataReference purpose=&quot;EmergencyCallData.ServiceInfo&quot; ref=&quot;https://example.com/ref1&quot;/&gt;
+    &lt;EmergencyCallDataReference purpose=&quot;EmergencyCallData.ProviderInfo&quot; ref=&quot;https://example.com/ref2&quot;/&gt;
+    &lt;EmergencyCallDataReference purpose=&quot;EmergencyCallData.Comment&quot; ref=&quot;https://example.com/ref3&quot;/&gt;
+    &lt;EmergencyCallDataReference purpose=&quot;EmergencyCallData.ServiceInfo&quot; ref=&quot;https://example.com/ref4&quot;/&gt;
+    &lt;EmergencyCallDataReference purpose=&quot;EmergencyCallData.DeviceInfo&quot; ref=&quot;https://example.com/ref5&quot;/&gt;
+&lt;/provided-by&gt;
+</code></pre>
+<p>In the provided-by element, additional data may be provide by-value, by-reference or both. The EmergencyCallDataValue element contains additional data blocks by-value. Additional data by-reference is included in an array of EmergencyCallDataReference elements.</p>
+<p>There will be at most one EmergencyCallDataValue element within a provided-by element. This element includes up to five elements, one for each type of additional data. Each element for a specific type of additional data is an array with possibly more than one element in the array. For example, there may be multiple EmergencyCallData.ProviderInfo sub-elements.</p>
+<p>The EmergencyCallDataReference element contains two attributes. The purpose attribute identifies the type of additional data that it applies to (for example, EmergencyCallData.ServiceInfo). The ref attribute contains a HTTP URI that can be used to dereference (by performing an HTTP GET request) to obtain the actual data. There may be multiple elements for each type of additional data.</p>
+<p>The following table shows the element name to class name mapping in the EmergencyCallData namespace.</p>
+<table>
+<thead>
+<tr>
+<th>Element Name</th>
+<th>AdditionalData Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>provided-by</td>
+<td><a href="../api/AdditionalData.ProvidedByType.html">ProvidedByType</a></td>
+</tr>
+<tr>
+<td>EmergencyCallDataValue</td>
+<td><a href="../api/AdditionalData.EmergencyCallDataValueType.html">EmergencyCallDataValueType</a></td>
+</tr>
+<tr>
+<td>EmergencyCallData.Comment</td>
+<td><a href="../api/AdditionalData.CommentType.html">CommentType</a></td>
+</tr>
+<tr>
+<td>EmergencyCallData.DeviceInfo</td>
+<td><a href="../api/AdditionalData.DeviceInfoType.html">DeviceInfoType</a></td>
+</tr>
+<tr>
+<td>EmergencyCallData.ProviderInfo</td>
+<td><a href="../api/AdditionalData.ProviderInfoType.html">ProviderInfoType</a></td>
+</tr>
+<tr>
+<td>EmergencyCallData.ServiceInfo</td>
+<td><a href="../api/AdditionalData.ServiceInfoType.html">ServiceInfoType</a></td>
+</tr>
+<tr>
+<td>EmergencyCallData.SubscriberInfo</td>
+<td><a href="../api/AdditionalData.SubscriberInfoType.html">SubscriberInfoType</a></td>
+</tr>
+<tr>
+<td>EmergencyCallDataReference</td>
+<td><a href="../api/AdditionalData.ByRefType.html">ByRefType</a></td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
