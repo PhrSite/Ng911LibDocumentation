@@ -6494,13 +6494,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 8,
-          "skipped_file_count": 6
+          "skipped_file_count": 8
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 531,
-          "skipped_file_count": 22
+          "skipped_file_count": 384
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
