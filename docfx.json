@@ -5,7 +5,7 @@
         {
             "files": [ "**/*.csproj" ],
             "exclude": [ "**/bin/**", "**/obj/**" ],
-            "src": "/_MyProjects/Ng911Lib"
+            "src": "../Ng911Lib/ClassLibrary"
         }
       ],
       "dest": "api",
