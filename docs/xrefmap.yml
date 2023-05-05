@@ -12189,6 +12189,149 @@ references:
   commentId: F:Held.LocationUriSet.locationURI
   fullName: Held.LocationUriSet.locationURI
   nameWithType: LocationUriSet.locationURI
+- uid: HttpUtils
+  name: HttpUtils
+  href: api/HttpUtils.html
+  commentId: N:HttpUtils
+  fullName: HttpUtils
+  nameWithType: HttpUtils
+- uid: HttpUtils.AsyncHttpRequestor
+  name: AsyncHttpRequestor
+  href: api/HttpUtils.AsyncHttpRequestor.html
+  commentId: T:HttpUtils.AsyncHttpRequestor
+  fullName: HttpUtils.AsyncHttpRequestor
+  nameWithType: AsyncHttpRequestor
+- uid: HttpUtils.AsyncHttpRequestor.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Int32,System.String)
+  name: AsyncHttpRequestor(X509Certificate2, Int32, String)
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor__ctor_System_Security_Cryptography_X509Certificates_X509Certificate2_System_Int32_System_String_
+  commentId: M:HttpUtils.AsyncHttpRequestor.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Int32,System.String)
+  fullName: HttpUtils.AsyncHttpRequestor.AsyncHttpRequestor(System.Security.Cryptography.X509Certificates.X509Certificate2, System.Int32, System.String)
+  nameWithType: AsyncHttpRequestor.AsyncHttpRequestor(X509Certificate2, Int32, String)
+- uid: HttpUtils.AsyncHttpRequestor.#ctor*
+  name: AsyncHttpRequestor
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor__ctor_
+  commentId: Overload:HttpUtils.AsyncHttpRequestor.#ctor
+  isSpec: "True"
+  fullName: HttpUtils.AsyncHttpRequestor.AsyncHttpRequestor
+  nameWithType: AsyncHttpRequestor.AsyncHttpRequestor
+- uid: HttpUtils.AsyncHttpRequestor.AcceptAllServerCertificates
+  name: AcceptAllServerCertificates
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_AcceptAllServerCertificates
+  commentId: P:HttpUtils.AsyncHttpRequestor.AcceptAllServerCertificates
+  fullName: HttpUtils.AsyncHttpRequestor.AcceptAllServerCertificates
+  nameWithType: AsyncHttpRequestor.AcceptAllServerCertificates
+- uid: HttpUtils.AsyncHttpRequestor.AcceptAllServerCertificates*
+  name: AcceptAllServerCertificates
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_AcceptAllServerCertificates_
+  commentId: Overload:HttpUtils.AsyncHttpRequestor.AcceptAllServerCertificates
+  isSpec: "True"
+  fullName: HttpUtils.AsyncHttpRequestor.AcceptAllServerCertificates
+  nameWithType: AsyncHttpRequestor.AcceptAllServerCertificates
+- uid: HttpUtils.AsyncHttpRequestor.Dispose
+  name: Dispose()
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_Dispose
+  commentId: M:HttpUtils.AsyncHttpRequestor.Dispose
+  fullName: HttpUtils.AsyncHttpRequestor.Dispose()
+  nameWithType: AsyncHttpRequestor.Dispose()
+- uid: HttpUtils.AsyncHttpRequestor.Dispose*
+  name: Dispose
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_Dispose_
+  commentId: Overload:HttpUtils.AsyncHttpRequestor.Dispose
+  isSpec: "True"
+  fullName: HttpUtils.AsyncHttpRequestor.Dispose
+  nameWithType: AsyncHttpRequestor.Dispose
+- uid: HttpUtils.AsyncHttpRequestor.DoRequestAsync(HttpUtils.HttpMethodEnum,System.String,System.String,System.String,System.Boolean)
+  name: DoRequestAsync(HttpMethodEnum, String, String, String, Boolean)
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_DoRequestAsync_HttpUtils_HttpMethodEnum_System_String_System_String_System_String_System_Boolean_
+  commentId: M:HttpUtils.AsyncHttpRequestor.DoRequestAsync(HttpUtils.HttpMethodEnum,System.String,System.String,System.String,System.Boolean)
+  fullName: HttpUtils.AsyncHttpRequestor.DoRequestAsync(HttpUtils.HttpMethodEnum, System.String, System.String, System.String, System.Boolean)
+  nameWithType: AsyncHttpRequestor.DoRequestAsync(HttpMethodEnum, String, String, String, Boolean)
+- uid: HttpUtils.AsyncHttpRequestor.DoRequestAsync*
+  name: DoRequestAsync
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_DoRequestAsync_
+  commentId: Overload:HttpUtils.AsyncHttpRequestor.DoRequestAsync
+  isSpec: "True"
+  fullName: HttpUtils.AsyncHttpRequestor.DoRequestAsync
+  nameWithType: AsyncHttpRequestor.DoRequestAsync
+- uid: HttpUtils.AsyncHttpRequestor.GetStringResponseAsync(System.String)
+  name: GetStringResponseAsync(String)
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_GetStringResponseAsync_System_String_
+  commentId: M:HttpUtils.AsyncHttpRequestor.GetStringResponseAsync(System.String)
+  fullName: HttpUtils.AsyncHttpRequestor.GetStringResponseAsync(System.String)
+  nameWithType: AsyncHttpRequestor.GetStringResponseAsync(String)
+- uid: HttpUtils.AsyncHttpRequestor.GetStringResponseAsync*
+  name: GetStringResponseAsync
+  href: api/HttpUtils.AsyncHttpRequestor.html#HttpUtils_AsyncHttpRequestor_GetStringResponseAsync_
+  commentId: Overload:HttpUtils.AsyncHttpRequestor.GetStringResponseAsync
+  isSpec: "True"
+  fullName: HttpUtils.AsyncHttpRequestor.GetStringResponseAsync
+  nameWithType: AsyncHttpRequestor.GetStringResponseAsync
+- uid: HttpUtils.HttpMethodEnum
+  name: HttpMethodEnum
+  href: api/HttpUtils.HttpMethodEnum.html
+  commentId: T:HttpUtils.HttpMethodEnum
+  fullName: HttpUtils.HttpMethodEnum
+  nameWithType: HttpMethodEnum
+- uid: HttpUtils.HttpMethodEnum.DELETE
+  name: DELETE
+  href: api/HttpUtils.HttpMethodEnum.html#HttpUtils_HttpMethodEnum_DELETE
+  commentId: F:HttpUtils.HttpMethodEnum.DELETE
+  fullName: HttpUtils.HttpMethodEnum.DELETE
+  nameWithType: HttpMethodEnum.DELETE
+- uid: HttpUtils.HttpMethodEnum.GET
+  name: GET
+  href: api/HttpUtils.HttpMethodEnum.html#HttpUtils_HttpMethodEnum_GET
+  commentId: F:HttpUtils.HttpMethodEnum.GET
+  fullName: HttpUtils.HttpMethodEnum.GET
+  nameWithType: HttpMethodEnum.GET
+- uid: HttpUtils.HttpMethodEnum.POST
+  name: POST
+  href: api/HttpUtils.HttpMethodEnum.html#HttpUtils_HttpMethodEnum_POST
+  commentId: F:HttpUtils.HttpMethodEnum.POST
+  fullName: HttpUtils.HttpMethodEnum.POST
+  nameWithType: HttpMethodEnum.POST
+- uid: HttpUtils.HttpMethodEnum.PUT
+  name: PUT
+  href: api/HttpUtils.HttpMethodEnum.html#HttpUtils_HttpMethodEnum_PUT
+  commentId: F:HttpUtils.HttpMethodEnum.PUT
+  fullName: HttpUtils.HttpMethodEnum.PUT
+  nameWithType: HttpMethodEnum.PUT
+- uid: HttpUtils.HttpResults
+  name: HttpResults
+  href: api/HttpUtils.HttpResults.html
+  commentId: T:HttpUtils.HttpResults
+  fullName: HttpUtils.HttpResults
+  nameWithType: HttpResults
+- uid: HttpUtils.HttpResults.Body
+  name: Body
+  href: api/HttpUtils.HttpResults.html#HttpUtils_HttpResults_Body
+  commentId: F:HttpUtils.HttpResults.Body
+  fullName: HttpUtils.HttpResults.Body
+  nameWithType: HttpResults.Body
+- uid: HttpUtils.HttpResults.ContentType
+  name: ContentType
+  href: api/HttpUtils.HttpResults.html#HttpUtils_HttpResults_ContentType
+  commentId: F:HttpUtils.HttpResults.ContentType
+  fullName: HttpUtils.HttpResults.ContentType
+  nameWithType: HttpResults.ContentType
+- uid: HttpUtils.HttpResults.Excpt
+  name: Excpt
+  href: api/HttpUtils.HttpResults.html#HttpUtils_HttpResults_Excpt
+  commentId: F:HttpUtils.HttpResults.Excpt
+  fullName: HttpUtils.HttpResults.Excpt
+  nameWithType: HttpResults.Excpt
+- uid: HttpUtils.HttpResults.Reason
+  name: Reason
+  href: api/HttpUtils.HttpResults.html#HttpUtils_HttpResults_Reason
+  commentId: F:HttpUtils.HttpResults.Reason
+  fullName: HttpUtils.HttpResults.Reason
+  nameWithType: HttpResults.Reason
+- uid: HttpUtils.HttpResults.StatusCode
+  name: StatusCode
+  href: api/HttpUtils.HttpResults.html#HttpUtils_HttpResults_StatusCode
+  commentId: F:HttpUtils.HttpResults.StatusCode
+  fullName: HttpUtils.HttpResults.StatusCode
+  nameWithType: HttpResults.StatusCode
 - uid: I3LogEvents
   name: I3LogEvents
   href: api/I3LogEvents.html
@@ -13296,6 +13439,83 @@ references:
   isSpec: "True"
   fullName: I3LogEvents.HookflashLogEvent.lineId
   nameWithType: HookflashLogEvent.lineId
+- uid: I3LogEvents.I3LogEventClient
+  name: I3LogEventClient
+  href: api/I3LogEvents.I3LogEventClient.html
+  commentId: T:I3LogEvents.I3LogEventClient
+  fullName: I3LogEvents.I3LogEventClient
+  nameWithType: I3LogEventClient
+- uid: I3LogEvents.I3LogEventClient.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)
+  name: I3LogEventClient(String, String, X509Certificate2)
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient__ctor_System_String_System_String_System_Security_Cryptography_X509Certificates_X509Certificate2_
+  commentId: M:I3LogEvents.I3LogEventClient.#ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)
+  fullName: I3LogEvents.I3LogEventClient.I3LogEventClient(System.String, System.String, System.Security.Cryptography.X509Certificates.X509Certificate2)
+  nameWithType: I3LogEventClient.I3LogEventClient(String, String, X509Certificate2)
+- uid: I3LogEvents.I3LogEventClient.#ctor*
+  name: I3LogEventClient
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient__ctor_
+  commentId: Overload:I3LogEvents.I3LogEventClient.#ctor
+  isSpec: "True"
+  fullName: I3LogEvents.I3LogEventClient.I3LogEventClient
+  nameWithType: I3LogEventClient.I3LogEventClient
+- uid: I3LogEvents.I3LogEventClient.LoggingServerError
+  name: LoggingServerError
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_LoggingServerError
+  commentId: E:I3LogEvents.I3LogEventClient.LoggingServerError
+  fullName: I3LogEvents.I3LogEventClient.LoggingServerError
+  nameWithType: I3LogEventClient.LoggingServerError
+- uid: I3LogEvents.I3LogEventClient.Responding
+  name: Responding
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_Responding
+  commentId: P:I3LogEvents.I3LogEventClient.Responding
+  fullName: I3LogEvents.I3LogEventClient.Responding
+  nameWithType: I3LogEventClient.Responding
+- uid: I3LogEvents.I3LogEventClient.Responding*
+  name: Responding
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_Responding_
+  commentId: Overload:I3LogEvents.I3LogEventClient.Responding
+  isSpec: "True"
+  fullName: I3LogEvents.I3LogEventClient.Responding
+  nameWithType: I3LogEventClient.Responding
+- uid: I3LogEvents.I3LogEventClient.SendLogEvent(I3LogEvents.LogEvent)
+  name: SendLogEvent(LogEvent)
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_SendLogEvent_I3LogEvents_LogEvent_
+  commentId: M:I3LogEvents.I3LogEventClient.SendLogEvent(I3LogEvents.LogEvent)
+  fullName: I3LogEvents.I3LogEventClient.SendLogEvent(I3LogEvents.LogEvent)
+  nameWithType: I3LogEventClient.SendLogEvent(LogEvent)
+- uid: I3LogEvents.I3LogEventClient.SendLogEvent*
+  name: SendLogEvent
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_SendLogEvent_
+  commentId: Overload:I3LogEvents.I3LogEventClient.SendLogEvent
+  isSpec: "True"
+  fullName: I3LogEvents.I3LogEventClient.SendLogEvent
+  nameWithType: I3LogEventClient.SendLogEvent
+- uid: I3LogEvents.I3LogEventClient.Shutdown
+  name: Shutdown()
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_Shutdown
+  commentId: M:I3LogEvents.I3LogEventClient.Shutdown
+  fullName: I3LogEvents.I3LogEventClient.Shutdown()
+  nameWithType: I3LogEventClient.Shutdown()
+- uid: I3LogEvents.I3LogEventClient.Shutdown*
+  name: Shutdown
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_Shutdown_
+  commentId: Overload:I3LogEvents.I3LogEventClient.Shutdown
+  isSpec: "True"
+  fullName: I3LogEvents.I3LogEventClient.Shutdown
+  nameWithType: I3LogEventClient.Shutdown
+- uid: I3LogEvents.I3LogEventClient.Start
+  name: Start()
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_Start
+  commentId: M:I3LogEvents.I3LogEventClient.Start
+  fullName: I3LogEvents.I3LogEventClient.Start()
+  nameWithType: I3LogEventClient.Start()
+- uid: I3LogEvents.I3LogEventClient.Start*
+  name: Start
+  href: api/I3LogEvents.I3LogEventClient.html#I3LogEvents_I3LogEventClient_Start_
+  commentId: Overload:I3LogEvents.I3LogEventClient.Start
+  isSpec: "True"
+  fullName: I3LogEvents.I3LogEventClient.Start
+  nameWithType: I3LogEventClient.Start
 - uid: I3LogEvents.I3LogEventContent
   name: I3LogEventContent
   href: api/I3LogEvents.I3LogEventContent.html
@@ -13334,6 +13554,12 @@ references:
   isSpec: "True"
   fullName: I3LogEvents.I3LogEventContent.content
   nameWithType: I3LogEventContent.content
+- uid: I3LogEvents.I3LoggingErrorDelegate
+  name: I3LoggingErrorDelegate
+  href: api/I3LogEvents.I3LoggingErrorDelegate.html
+  commentId: T:I3LogEvents.I3LoggingErrorDelegate
+  fullName: I3LogEvents.I3LoggingErrorDelegate
+  nameWithType: I3LoggingErrorDelegate
 - uid: I3LogEvents.IncidentClearLogEvent
   name: IncidentClearLogEvent
   href: api/I3LogEvents.IncidentClearLogEvent.html
@@ -19560,6 +19786,82 @@ references:
   isSpec: "True"
   fullName: Ng911Lib.Utilities.XmlHelper.SerializeToString
   nameWithType: XmlHelper.SerializeToString
+- uid: NgWebSockets
+  name: NgWebSockets
+  href: api/NgWebSockets.html
+  commentId: N:NgWebSockets
+  fullName: NgWebSockets
+  nameWithType: NgWebSockets
+- uid: NgWebSockets.NgWebSocketClient
+  name: NgWebSocketClient
+  href: api/NgWebSockets.NgWebSocketClient.html
+  commentId: T:NgWebSockets.NgWebSocketClient
+  fullName: NgWebSockets.NgWebSocketClient
+  nameWithType: NgWebSocketClient
+- uid: NgWebSockets.NgWebSocketClient.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.Net.Security.RemoteCertificateValidationCallback)
+  name: NgWebSocketClient(X509Certificate2, String, RemoteCertificateValidationCallback)
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient__ctor_System_Security_Cryptography_X509Certificates_X509Certificate2_System_String_System_Net_Security_RemoteCertificateValidationCallback_
+  commentId: M:NgWebSockets.NgWebSocketClient.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.Net.Security.RemoteCertificateValidationCallback)
+  fullName: NgWebSockets.NgWebSocketClient.NgWebSocketClient(System.Security.Cryptography.X509Certificates.X509Certificate2, System.String, System.Net.Security.RemoteCertificateValidationCallback)
+  nameWithType: NgWebSocketClient.NgWebSocketClient(X509Certificate2, String, RemoteCertificateValidationCallback)
+- uid: NgWebSockets.NgWebSocketClient.#ctor*
+  name: NgWebSocketClient
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient__ctor_
+  commentId: Overload:NgWebSockets.NgWebSocketClient.#ctor
+  isSpec: "True"
+  fullName: NgWebSockets.NgWebSocketClient.NgWebSocketClient
+  nameWithType: NgWebSocketClient.NgWebSocketClient
+- uid: NgWebSockets.NgWebSocketClient.Close
+  name: Close()
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient_Close
+  commentId: M:NgWebSockets.NgWebSocketClient.Close
+  fullName: NgWebSockets.NgWebSocketClient.Close()
+  nameWithType: NgWebSocketClient.Close()
+- uid: NgWebSockets.NgWebSocketClient.Close*
+  name: Close
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient_Close_
+  commentId: Overload:NgWebSockets.NgWebSocketClient.Close
+  isSpec: "True"
+  fullName: NgWebSockets.NgWebSocketClient.Close
+  nameWithType: NgWebSocketClient.Close
+- uid: NgWebSockets.NgWebSocketClient.Connect(System.String)
+  name: Connect(String)
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient_Connect_System_String_
+  commentId: M:NgWebSockets.NgWebSocketClient.Connect(System.String)
+  fullName: NgWebSockets.NgWebSocketClient.Connect(System.String)
+  nameWithType: NgWebSocketClient.Connect(String)
+- uid: NgWebSockets.NgWebSocketClient.Connect*
+  name: Connect
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient_Connect_
+  commentId: Overload:NgWebSockets.NgWebSocketClient.Connect
+  isSpec: "True"
+  fullName: NgWebSockets.NgWebSocketClient.Connect
+  nameWithType: NgWebSocketClient.Connect
+- uid: NgWebSockets.NgWebSocketClient.MessageReceived
+  name: MessageReceived
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient_MessageReceived
+  commentId: E:NgWebSockets.NgWebSocketClient.MessageReceived
+  fullName: NgWebSockets.NgWebSocketClient.MessageReceived
+  nameWithType: NgWebSocketClient.MessageReceived
+- uid: NgWebSockets.NgWebSocketClient.SendMessage(System.String)
+  name: SendMessage(String)
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient_SendMessage_System_String_
+  commentId: M:NgWebSockets.NgWebSocketClient.SendMessage(System.String)
+  fullName: NgWebSockets.NgWebSocketClient.SendMessage(System.String)
+  nameWithType: NgWebSocketClient.SendMessage(String)
+- uid: NgWebSockets.NgWebSocketClient.SendMessage*
+  name: SendMessage
+  href: api/NgWebSockets.NgWebSocketClient.html#NgWebSockets_NgWebSocketClient_SendMessage_
+  commentId: Overload:NgWebSockets.NgWebSocketClient.SendMessage
+  isSpec: "True"
+  fullName: NgWebSockets.NgWebSocketClient.SendMessage
+  nameWithType: NgWebSocketClient.SendMessage
+- uid: NgWebSockets.WebSocketMessageReceived
+  name: WebSocketMessageReceived
+  href: api/NgWebSockets.WebSocketMessageReceived.html
+  commentId: T:NgWebSockets.WebSocketMessageReceived
+  fullName: NgWebSockets.WebSocketMessageReceived
+  nameWithType: WebSocketMessageReceived
 - uid: Pidf
   name: Pidf
   href: api/Pidf.html

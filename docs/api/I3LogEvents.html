@@ -766,6 +766,21 @@
                             <a href="Held.LocationUriSet.html" title="LocationUriSet" class="">LocationUriSet</a>
                           </li>
                         </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="HttpUtils.html" title="HttpUtils" class="">HttpUtils</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="HttpUtils.AsyncHttpRequestor.html" title="AsyncHttpRequestor" class="">AsyncHttpRequestor</a>
+                          </li>
+                          <li class="">
+                            <a href="HttpUtils.HttpMethodEnum.html" title="HttpMethodEnum" class="">HttpMethodEnum</a>
+                          </li>
+                          <li class="">
+                            <a href="HttpUtils.HttpResults.html" title="HttpResults" class="">HttpResults</a>
+                          </li>
+                        </ul>  </li>
                     <li class="active">
                       <span class="expand-stub"></span>
                       <a href="I3LogEvents.html" title="I3LogEvents" class="active">I3LogEvents</a>
@@ -826,7 +841,13 @@
                             <a href="I3LogEvents.HookflashLogEvent.html" title="HookflashLogEvent" class="">HookflashLogEvent</a>
                           </li>
                           <li class="">
+                            <a href="I3LogEvents.I3LogEventClient.html" title="I3LogEventClient" class="">I3LogEventClient</a>
+                          </li>
+                          <li class="">
                             <a href="I3LogEvents.I3LogEventContent.html" title="I3LogEventContent" class="">I3LogEventContent</a>
+                          </li>
+                          <li class="">
+                            <a href="I3LogEvents.I3LoggingErrorDelegate.html" title="I3LoggingErrorDelegate" class="">I3LoggingErrorDelegate</a>
                           </li>
                           <li class="">
                             <a href="I3LogEvents.IncidentClearLogEvent.html" title="IncidentClearLogEvent" class="">IncidentClearLogEvent</a>
@@ -1196,6 +1217,18 @@
                           </li>
                           <li class="">
                             <a href="Ng911Lib.Utilities.XmlHelper.html" title="XmlHelper" class="">XmlHelper</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="NgWebSockets.html" title="NgWebSockets" class="">NgWebSockets</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="NgWebSockets.NgWebSocketClient.html" title="NgWebSocketClient" class="">NgWebSocketClient</a>
+                          </li>
+                          <li class="">
+                            <a href="NgWebSockets.WebSocketMessageReceived.html" title="WebSocketMessageReceived" class="">WebSocketMessageReceived</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -1841,6 +1874,10 @@ Logged by an LNG, LPG, or LSRG to log a call entering or leaving on a legacy int
 Logged by an LPG when initiates a hookswitch flash or it detects a hookswitch flash event on
 the line. Not logged if the hookswitch flash event is logged with a GatewayCallLogEvent.</p>
 </section>
+      <h4><a class="xref" href="I3LogEvents.I3LogEventClient.html">I3LogEventClient</a></h4>
+      <section><p>Implements an I3 V3 Log Event Client. This class allows an application to send log events to a log event
+server.</p>
+</section>
       <h4><a class="xref" href="I3LogEvents.I3LogEventContent.html">I3LogEventContent</a></h4>
       <section><p>JSON content data class for passing I3V3 log events as a JSON Web Signature (JWS) to an I3V3
 log event server.</p>
@@ -2001,6 +2038,11 @@ in Section 10.35. The server must log this event. The client may log this event.
 Logs the response to a web service Versions request.
 Note: Some logging clients use the Versions request to poll the logging service to see if
 it is available. Logging these requests will generate an excessive number of log events.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="I3LogEvents.I3LoggingErrorDelegate.html">I3LoggingErrorDelegate</a></h4>
+      <section><p>Delegate for the LoggingServerError event of the I3LogEventClient class.</p>
 </section>
 </article>
           </div>

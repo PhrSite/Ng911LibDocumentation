@@ -11,6 +11,7 @@
 | ECall                  | Model classes that implement the control and meta-data schemas defined in RFC 8147. Note: These classes do not support the European Minimum Set Data (MSD). The control and meta-data schemas are required for implementing the Next Generation Automatic Crash Notificatation (NG-ACN) calls as specified in RFC 8148. |
 | Geocode                | Classes for the Geocode Conversion Service specified in Sections 4.5.1, 4.5.2 and E.5 of NENA-STA-010.3b. |
 | Held                   | Classes for the HELD protocol as specified in RFC 5985 HTTP-Enabled Location Delivery |
+| HttpUtils | ontains utility classes for performing HTTP operations, such as the [AsyncHttpRequestor](~/api/HttpUtils.AsyncHttpRequestor.yml) class which is a general purpose HTTP(S) client for NG9-1-1 applications. |
 | I3LogEvents            | Data/model classes for NG9-1-1 logging as specified in Sections 4.12.3 and E.8 of NENA-STA-010.3b. |
 | I3SubNot               | Data/model classes for handling NG9-1-1 SIP Subscribe/Notify event packages such as Element State, Service State, Queue State, etc. |
 | Lost                   |  Data/model and utility classes for interfacing to an Emergency Call Routing Function (ECRF) using the LoST protocol. See RFC 5222 LoST: A Location-to-Service Translation Protocol. |
@@ -18,6 +19,7 @@
 | Ng911CertUtils         |  Contains utility classes for building self-signed  and signed X.509 certificates that can be used for testing. These classes can build X.509 certificates that include the certificate extensions required for NG9-1-1 systems. See [Public Safety Answering Point (PSAP) Credentialing Agency (PCA) Certificate Policy](https://ng911ioc.org/wp-content/uploads/2023/03/PSAP-Credentialing-Agency-PCA-Certificate-Policy-v1.1-02-22-2023-CLEAN.pdf)     |
 | Ng911Common            | Data/model classes used by all REST/JSON schemas defined in NENA-STA-010.3b. |
 | Ng911Lib.Utilities     | Utility classes for serializing and deserializing JSON and XML documents. |
+| NgWebSockets | Contains general purpose classes for performing communications using Web Sockets in an Ng9-1-1 application, such as the [NgWebSocketClient](~/api/NgWebSockets.NgWebSocketClient.yml) class for performing asynchronous Web Sockets communications when mutual authentication is required. |
 | Pidf                   | Data/model and utility classes for dealing with location data in NG9-1-1 applications. See [Working with PIDF-LO Data](~/articles/WorkingwithPIDF-LOData.md). |
 | PolicyRouting          | Data/model classes for implemting the NG9-1-1 policy routing rules. See Sections 3.3.3 and E.1 of NENA-STA-010.3b. |
 | PolicyStore            | Data/model classes for implementing the server side and the client side of the Policy Store Services defined in Sections 3.3.1 and E.1 of NENA-STA-010.3b. |

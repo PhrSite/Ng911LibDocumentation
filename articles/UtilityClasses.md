@@ -16,7 +16,7 @@ For example, to convert an XML string containing a Subscriber Information block 
 using Ng911Lib.Utilities;
 ...
 
-SubscriberInfoType subInfo = XmlHelper.DeserializeFromString(strSubInfo);
+SubscriberInfoType subInfo = XmlHelper.DeserializeFromString<SubscriberInfoType>(strSubInfo);
 ~~~
 
 Both of the deserialization methods catch all exceptions and return a value of null if an exception occurs, so be sure to check the return value before using it.
