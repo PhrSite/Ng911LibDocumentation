@@ -19,7 +19,7 @@ Appendix E of NENA-STA-010.3b contains the REST/JSON schema definitions specific
 | E.5 Geocode Conversion Service | 4.5.1, 4.5.2 | Geocode | Data/model classes for the geocode conversion service |
 | E.6 Test Call | 4.6.18, 4.6.17.1 | TestCall | Data/model classes for the NG9-1-1 test call generator |
 | E.7 Additional Data Repository | 4.11 | TBD | TBD |
-| E.8 Logging Service | 4.12.3 | I3LogEvents | Data/model classes for NG9-1-1 logging |
+| E.8 Logging Service | 4.12.3 | I3V3.LogEvents | Data/model classes for NG9-1-1 logging |
 | E.9 Bad Actor Service | 4.1.2 | BadActor | Data/model classes for passing data to the bad actor service of a Border Control Function (BCF) |
 | E.10 Service/Agency Locator Service | 4.15 | AgencyLocator| Data/model classes for the agency locator service interface |
 | E.11 Notify Bodies | 4.2.1.6, 4.3.4, 4.6.8, 2.4.1, 4.2.1.3, 2.4.2 | I3SubNot | Data/model classes for all SIP NG9-1-1 subscribe/notify interfaces. The subscribe/notify event packages include ESRP Notify, Abandoned Call, Element State, Service State, and Queue State |

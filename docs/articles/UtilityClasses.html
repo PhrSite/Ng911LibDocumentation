@@ -125,7 +125,7 @@ public static T DeserializeFromString&lt;T&gt;(string str, out Exception Excpt);
 <pre><code>using Ng911Lib.Utilities;
 ...
 
-SubscriberInfoType subInfo = XmlHelper.DeserializeFromString(strSubInfo);
+SubscriberInfoType subInfo = XmlHelper.DeserializeFromString&lt;SubscriberInfoType&gt;(strSubInfo);
 </code></pre>
 <p>Both of the deserialization methods catch all exceptions and return a value of null if an exception occurs, so be sure to check the return value before using it.</p>
 <p>The override of the DeserializeFromString that takes an Exception object as an output parameter can be used for trouble shooting and logging purposes. If this method returns a null value, then the Excpt output parameter will not be null. You can call the ToString() method of the Excpt parameter to get the details of the problem that was encountered.</p>

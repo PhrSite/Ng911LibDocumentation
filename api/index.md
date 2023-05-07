@@ -12,7 +12,8 @@
 | Geocode                | Classes for the Geocode Conversion Service specified in Sections 4.5.1, 4.5.2 and E.5 of NENA-STA-010.3b. |
 | Held                   | Classes for the HELD protocol as specified in RFC 5985 HTTP-Enabled Location Delivery |
 | HttpUtils | ontains utility classes for performing HTTP operations, such as the [AsyncHttpRequestor](~/api/HttpUtils.AsyncHttpRequestor.yml) class which is a general purpose HTTP(S) client for NG9-1-1 applications. |
-| I3LogEvents            | Data/model classes for NG9-1-1 logging as specified in Sections 4.12.3 and E.8 of NENA-STA-010.3b. |
+| I3V3.LogEvents            | Data/model classes for NG9-1-1 logging as specified in Sections 4.12.3 and E.8 of NENA-STA-010.3b and in the NENA EIDO Conveyance Standard (NENA-STA-024.1a-2023) |
+| I3V3.LoggingHelpers | Containes helper classes for logging I3V3 log events such as the [I3LogEventClient](~/api/I3V3.LoggingHelpers.I3LogEventClient.yml). |
 | I3SubNot               | Data/model classes for handling NG9-1-1 SIP Subscribe/Notify event packages such as Element State, Service State, Queue State, etc. |
 | Lost                   |  Data/model and utility classes for interfacing to an Emergency Call Routing Function (ECRF) using the LoST protocol. See RFC 5222 LoST: A Location-to-Service Translation Protocol. |
 | Msag                   |  Data/model classes for the Master Street Address Guide (MSAG) conversion service. See Sections 4.4.1 and E.4 of NENA-STA-010.3b. |
