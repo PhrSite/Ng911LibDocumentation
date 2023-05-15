@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NG9-1-1 Event Logging </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="NG9-1-1 Event Logging ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="UtilityClasses.html" title="Utility Classes" class="">Utility Classes</a>
+                    </li>
+                    <li class="">
+                      <a href="WorkingwithPIDF-LOData.html" title="Working with PIDF-LO Data" class="">Working with PIDF-LO Data</a>
+                    </li>
+                    <li class="">
+                      <a href="WorkingWithAdditionalData.html" title="Working with Additional Data" class="">Working with Additional Data</a>
+                    </li>
+                    <li class="">
+                      <a href="Ng911Certificates.html" title="NG9-1-1 X.509 Certificates" class="">NG9-1-1 X.509 Certificates</a>
+                    </li>
+                    <li class="active">
+                      <a href="Ng911EventLogging.html" title="NG9-1-1 Event Logging" class="active">NG9-1-1 Event Logging</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ng9-1-1-event-logging">NG9-1-1 Event Logging</h1>
+
+<p>The following documents specify events that must be logged by NG9-1-1 functional elements.</p>
+<blockquote>
+<p><a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-010.3b-2021_i3_stan.pdf">NENA i3 Standard for Next Generation 9-1-1</a> (NENA-STA-010.3b-2021).</p>
+<p><a href="https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-024.1a-2023_eidocon.pdf">NENA Standard for the Conveyance of Emergency Incident Data Objects (EIDOs) between Next Generation (NG9-1-1) Systems and Applications</a> (NENA-STA-024.1a-2023).</p>
+</blockquote>
+<p>The <a href="https://github.com/NENA911/Logging-Service/blob/main/loggingservice.yaml">loggingservice.yaml</a> file in the NENA/Logging-Service GitHub repository specifies the JSON schema definitions for NG9-1-1 log events.</p>
+<p>The I3V3.LogEvents namespace contains model classes for all of the log events specified in the above standards.</p>
+<p>The I3V3.LoggingHelpers namespace provides two classes that allow applications to easily send NG9-1-1 log events to logging servers. The I3LogEventClient class provides a client interface to a single logging server. The I3LogEventClientMgr class provides a single client interface to multiple logging servers. NENA-STA-010.3b-2021 specifies that all functional elements must be able to send log events to at least two loggers so it is best to use the I3LogEventClientMgr class.</p>
+<h1 id="the-i3logeventclient-class">The I3LogEventClient Class</h1>
+<p>The <a href="../api/I3V3.LoggingHelpers.I3LogEventClient.html">I3LogEventClient</a> class provides the functionality of an NG9-1-1 log event client. This class manages a permanent connection to a single log event server. Log events are queued and sent synchronously to the log event server in a permament worker thread.</p>
+<p>This class periodically polls the log event server by sending a request to get the version information from the server. The polling period is five seconds.</p>
+<p>The I3LogEventClient has two events that can be used to notify the user of this class when an error occurs or when the status of the connection to the logging server changes.</p>
+<p>To use this class, create an instance of it, hook the events and then call the Start() method as follows.</p>
+<pre><code>using I3V3.LogEvents;
+using I3V3.LoggingHelpers;
+using System.Security.Cryptography.X509Certificates;
+
+namespace MyNamespace;
+
+public class MyClass
+{
+
+    public I3LogEventClient SetupLoggingClient()
+    {
+        string strUrl = &quot;https://192.168.1.79:8080&quot;;  // For example
+        X509Certificate2 clientCert = // Get the client certificate or set to null
+        I3LogEventClient Client1 = new I3LogEventClient(strUrl, &quot;LoggingServer1&quot;, clientCert);
+
+        // Hook the events if desired
+        Client1.LoggingServerStatusChanged += OnLoggingServerStatusChanged;
+        Client1.LoggingServerError += OnLoggingServerError;
+
+		// Start the logging client
+        Client1.Start();
+        return Client1;
+    }
+
+    private static void OnLoggingServerStatusChanged(string strLoggerName, bool Responding)
+    {
+        // Do something with the new status such as to log an error if Responding is false.
+    }
+
+	private void OnLoggingServerError(HttpResults Hr, string strLoggerName, string strLogEvent)
+    {
+    	// Do something with the error information such as log it.
+    }
+}
+</code></pre>
+<p>Keep a reference to the new logging client (Client1 in this example) so that you can use it to send log events to the logging server.</p>
+<h2 id="sending-log-events">Sending Log Events</h2>
+<p>Call the SendLogEvent() method to send a log event to the logging server.</p>
+<pre><code>    CallStartLogEvent Csle = new CallStartLogEvent();
+    // Set the properties of the CallStartLogEvent object and its base class (LogEvent)
+    Client1.SendLogEvent(Csle);
+</code></pre>
+<p>The SendLogEvent() method queues the log event and returns immediately.</p>
+<p>This method is thread-safe so that it may be called from any thread in the application.</p>
+<h2 id="handling-the-events">Handling the Events</h2>
+<h3 id="the-loggingserverstatuschanged-event">The LoggingServerStatusChanged Event</h3>
+<p>The background worker thread of the I3LogEventClient class polls the logging server every five seconds by requesting the version information from the server. If the logging server fails to respond, then the I3LogEventClient fires the LoggingServerStatusChanged event.</p>
+<p>The delegate declaration for this event is:I3LogEventClient Client1 = new I3LogEventClient(strUrl, &quot;LoggingServer1&quot;, clientCert);</p>
+<pre><code>public delegate void LoggingServerStatusChangedDeletate(string strLoggerName, bool Responding);
+</code></pre>
+<p>The background worker thread continues to poll the logging server even if Responding is false. When the logging server responds to a versions request, the background worker thread fires the LoggingServerStatusChanged event again, this time with Responding set to true. Hence, the maximum frequency that the application will receive this event is once every five seconds.</p>
+<p>When Responding is false, the I3LogEventClient class stops sending log events to the logging server. It also stops queuing log events when SendLogEvent() is called. The purpose of this behavior is to prevent the queue from consuming a large amount of memory over long periods of operation when a logging server is down or not functioning properly.</p>
+<h3 id="the-loggingservererror-event">The LoggingServerError Event</h3>
+<p>The I3LogEventClient class sends log events to the logging server using a HTTP POST request. The I3LogEventClient class fires the LoggingServerError event if an error occurs such as a timeout or if the logging server responds with an error code.</p>
+<p>The application can use the information sent to the event handler to log the error.</p>
+<p>The delegate definition of the LoggingServerError event is:</p>
+<pre><code>public delegate void I3LoggingErrorDelegate(HttpResults Hr, string strLoggerName, string strLogEvent);
+</code></pre>
+<p>The <a href="../api/HttpUtils.HttpResults.html">HttpResults</a> class contains information about the error or the response that was received from the logging server.</p>
+<h2 id="getting-the-logging-servers-supported-schema-versions">Getting the Logging Server's Supported Schema Versions</h2>
+<p>An application can use the GetVersionsArrayAsync() method of the I3LogEventClient class if it needs to find out which log event schema versions a logging server supports.</p>
+<pre><code>I3LogEventClient Client1 = new I3LogEventClient(strUrl, &quot;LoggingServer1&quot;, clientCert);
+VersionsArrayType Vat = await Client1.GetVersionsArrayAsync();
+// Do something with the version information.
+...
+Client1.Start();
+</code></pre>
+<p>The <a href="../api/Ng911Common.VersionsArrayType.html">VersionsArrayType</a> class contains a list of the schema versions that the logging server supports.</p>
+<p>The GetVersionsArrayAsync() method must be called before calling the Start() method. Ths I3LogEventClient class will throw an InvalidOperationException if it is called after calling Start().</p>
+<p>The GetVersionsArrayAsync() method returns null if the logging server does not respond to the request to get the version information or if it returns an error code.</p>
+<h1 id="the-i3logeventclientmgr-class">The I3LogEventClientMgr Class</h1>
+<p>The <a href="../api/I3V3.LoggingHelpers.I3LogEventClientMgr.html">I3LogEventClientMgr</a> class allows applications to manage sending NG9-1-1 log events to multiple log event servers. The NENA NG9-1-1 Standard (NENA-STA-010.3b-2021) states that all functional elements that log events must support logging to at least two log event servers so this is the class that most applications should use.</p>
+<p>Follow these steps when using this class.</p>
+<ol>
+<li>Create an instance of it.</li>
+<li>Create an I3LogEventClient object for each logging server</li>
+<li>Add the I3LogEventClient class to the list of clients that the I3LogEventClientMgr will manage by calling the AddLoggingClient() method.</li>
+<li>Hook the events of the I3LogEventClientMgr class</li>
+<li>Call the Start() method of the I3LogEventClientMgr class</li>
+</ol>
+<p>For example:</p>
+<pre><code>using I3V3.LogEvents;
+using I3V3.LoggingHelpers;
+using System.Security.Cryptography.X509Certificates;
+
+namespace MyNamespace;
+
+public class MyClass
+{
+
+    public I3LogEventClientMgr SetupLoggingClients()
+    {
+        string strUrl1 = &quot;https://192.168.1.79:8080&quot;;  // For example
+        string strUrl2 = &quot;https://192.168.1.80:8080&quot;;
+
+        X509Certificate2 clientCert = // Get the client certificate or set to null
+        I3LogEventClient Client1 = new I3LogEventClient(strUrl1, &quot;LoggingServer1&quot;, clientCert);
+        I3LogEventClient Client2 = new I3LogEventClient(strUrl2, &quot;LoggingServer2&quot;, clientCert);
+
+		I3LogEventClientMgr ClientMgr = new I3LogEventClientMgr();
+		ClientMgr.AddLoggingClient(Client1);
+        ClientMgr.AddLoggingClient(Client2);
+
+        // Hook the events if desired
+        ClientMgr.LoggingServerStatusChanged += OnLoggingServerStatusChanged;
+        ClientMgr.LoggingServerError += OnLoggingServerError;
+
+		// Start all logging clients
+        ClientMgr.Start();
+        return ClientMgr;
+    }
+
+    private static void OnLoggingServerStatusChanged(string strLoggerName, bool Responding)
+    {
+        // Do something with the new status such as to log an error if Responding is false.
+    }
+
+	private void OnLoggingServerError(HttpResults Hr, string strLoggerName, string strLogEvent)
+    {
+    	// Do something with the error information such as log it.
+    }
+}
+
+</code></pre>
+<p>Hold on to a reference to the I3LogEventClientMgr object and use it for logging NG9-1-1 events. To log an I3V3 event, call the SendLogEvent() method of the I3LogEventClientMgr class and it will send the event to each of the logging servers.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

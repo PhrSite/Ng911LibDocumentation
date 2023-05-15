@@ -18232,12 +18232,31 @@ references:
   isSpec: "True"
   fullName: I3V3.LoggingHelpers.I3LogEventClient.I3LogEventClient
   nameWithType: I3LogEventClient.I3LogEventClient
+- uid: I3V3.LoggingHelpers.I3LogEventClient.GetVersionsArrayAsync
+  name: GetVersionsArrayAsync()
+  href: api/I3V3.LoggingHelpers.I3LogEventClient.html#I3V3_LoggingHelpers_I3LogEventClient_GetVersionsArrayAsync
+  commentId: M:I3V3.LoggingHelpers.I3LogEventClient.GetVersionsArrayAsync
+  fullName: I3V3.LoggingHelpers.I3LogEventClient.GetVersionsArrayAsync()
+  nameWithType: I3LogEventClient.GetVersionsArrayAsync()
+- uid: I3V3.LoggingHelpers.I3LogEventClient.GetVersionsArrayAsync*
+  name: GetVersionsArrayAsync
+  href: api/I3V3.LoggingHelpers.I3LogEventClient.html#I3V3_LoggingHelpers_I3LogEventClient_GetVersionsArrayAsync_
+  commentId: Overload:I3V3.LoggingHelpers.I3LogEventClient.GetVersionsArrayAsync
+  isSpec: "True"
+  fullName: I3V3.LoggingHelpers.I3LogEventClient.GetVersionsArrayAsync
+  nameWithType: I3LogEventClient.GetVersionsArrayAsync
 - uid: I3V3.LoggingHelpers.I3LogEventClient.LoggingServerError
   name: LoggingServerError
   href: api/I3V3.LoggingHelpers.I3LogEventClient.html#I3V3_LoggingHelpers_I3LogEventClient_LoggingServerError
   commentId: E:I3V3.LoggingHelpers.I3LogEventClient.LoggingServerError
   fullName: I3V3.LoggingHelpers.I3LogEventClient.LoggingServerError
   nameWithType: I3LogEventClient.LoggingServerError
+- uid: I3V3.LoggingHelpers.I3LogEventClient.LoggingServerStatusChanged
+  name: LoggingServerStatusChanged
+  href: api/I3V3.LoggingHelpers.I3LogEventClient.html#I3V3_LoggingHelpers_I3LogEventClient_LoggingServerStatusChanged
+  commentId: E:I3V3.LoggingHelpers.I3LogEventClient.LoggingServerStatusChanged
+  fullName: I3V3.LoggingHelpers.I3LogEventClient.LoggingServerStatusChanged
+  nameWithType: I3LogEventClient.LoggingServerStatusChanged
 - uid: I3V3.LoggingHelpers.I3LogEventClient.Responding
   name: Responding
   href: api/I3V3.LoggingHelpers.I3LogEventClient.html#I3V3_LoggingHelpers_I3LogEventClient_Responding
@@ -18290,12 +18309,107 @@ references:
   isSpec: "True"
   fullName: I3V3.LoggingHelpers.I3LogEventClient.Start
   nameWithType: I3LogEventClient.Start
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr
+  name: I3LogEventClientMgr
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html
+  commentId: T:I3V3.LoggingHelpers.I3LogEventClientMgr
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr
+  nameWithType: I3LogEventClientMgr
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.AddLoggingClient(I3V3.LoggingHelpers.I3LogEventClient)
+  name: AddLoggingClient(I3LogEventClient)
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_AddLoggingClient_I3V3_LoggingHelpers_I3LogEventClient_
+  commentId: M:I3V3.LoggingHelpers.I3LogEventClientMgr.AddLoggingClient(I3V3.LoggingHelpers.I3LogEventClient)
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.AddLoggingClient(I3V3.LoggingHelpers.I3LogEventClient)
+  nameWithType: I3LogEventClientMgr.AddLoggingClient(I3LogEventClient)
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.AddLoggingClient*
+  name: AddLoggingClient
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_AddLoggingClient_
+  commentId: Overload:I3V3.LoggingHelpers.I3LogEventClientMgr.AddLoggingClient
+  isSpec: "True"
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.AddLoggingClient
+  nameWithType: I3LogEventClientMgr.AddLoggingClient
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.LoggingServerError
+  name: LoggingServerError
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_LoggingServerError
+  commentId: E:I3V3.LoggingHelpers.I3LogEventClientMgr.LoggingServerError
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.LoggingServerError
+  nameWithType: I3LogEventClientMgr.LoggingServerError
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.LoggingServerStatusChanged
+  name: LoggingServerStatusChanged
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_LoggingServerStatusChanged
+  commentId: E:I3V3.LoggingHelpers.I3LogEventClientMgr.LoggingServerStatusChanged
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.LoggingServerStatusChanged
+  nameWithType: I3LogEventClientMgr.LoggingServerStatusChanged
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.SendLogEvent(I3V3.LogEvents.LogEvent)
+  name: SendLogEvent(LogEvent)
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_SendLogEvent_I3V3_LogEvents_LogEvent_
+  commentId: M:I3V3.LoggingHelpers.I3LogEventClientMgr.SendLogEvent(I3V3.LogEvents.LogEvent)
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.SendLogEvent(I3V3.LogEvents.LogEvent)
+  nameWithType: I3LogEventClientMgr.SendLogEvent(LogEvent)
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.SendLogEvent*
+  name: SendLogEvent
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_SendLogEvent_
+  commentId: Overload:I3V3.LoggingHelpers.I3LogEventClientMgr.SendLogEvent
+  isSpec: "True"
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.SendLogEvent
+  nameWithType: I3LogEventClientMgr.SendLogEvent
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.Shutdown
+  name: Shutdown()
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_Shutdown
+  commentId: M:I3V3.LoggingHelpers.I3LogEventClientMgr.Shutdown
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.Shutdown()
+  nameWithType: I3LogEventClientMgr.Shutdown()
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.Shutdown*
+  name: Shutdown
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_Shutdown_
+  commentId: Overload:I3V3.LoggingHelpers.I3LogEventClientMgr.Shutdown
+  isSpec: "True"
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.Shutdown
+  nameWithType: I3LogEventClientMgr.Shutdown
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.Start
+  name: Start()
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_Start
+  commentId: M:I3V3.LoggingHelpers.I3LogEventClientMgr.Start
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.Start()
+  nameWithType: I3LogEventClientMgr.Start()
+- uid: I3V3.LoggingHelpers.I3LogEventClientMgr.Start*
+  name: Start
+  href: api/I3V3.LoggingHelpers.I3LogEventClientMgr.html#I3V3_LoggingHelpers_I3LogEventClientMgr_Start_
+  commentId: Overload:I3V3.LoggingHelpers.I3LogEventClientMgr.Start
+  isSpec: "True"
+  fullName: I3V3.LoggingHelpers.I3LogEventClientMgr.Start
+  nameWithType: I3LogEventClientMgr.Start
 - uid: I3V3.LoggingHelpers.I3LoggingErrorDelegate
   name: I3LoggingErrorDelegate
   href: api/I3V3.LoggingHelpers.I3LoggingErrorDelegate.html
   commentId: T:I3V3.LoggingHelpers.I3LoggingErrorDelegate
   fullName: I3V3.LoggingHelpers.I3LoggingErrorDelegate
   nameWithType: I3LoggingErrorDelegate
+- uid: I3V3.LoggingHelpers.I3LoggingUtils
+  name: I3LoggingUtils
+  href: api/I3V3.LoggingHelpers.I3LoggingUtils.html
+  commentId: T:I3V3.LoggingHelpers.I3LoggingUtils
+  fullName: I3V3.LoggingHelpers.I3LoggingUtils
+  nameWithType: I3LoggingUtils
+- uid: I3V3.LoggingHelpers.I3LoggingUtils.GetLogEventType(System.String)
+  name: GetLogEventType(String)
+  href: api/I3V3.LoggingHelpers.I3LoggingUtils.html#I3V3_LoggingHelpers_I3LoggingUtils_GetLogEventType_System_String_
+  commentId: M:I3V3.LoggingHelpers.I3LoggingUtils.GetLogEventType(System.String)
+  fullName: I3V3.LoggingHelpers.I3LoggingUtils.GetLogEventType(System.String)
+  nameWithType: I3LoggingUtils.GetLogEventType(String)
+- uid: I3V3.LoggingHelpers.I3LoggingUtils.GetLogEventType*
+  name: GetLogEventType
+  href: api/I3V3.LoggingHelpers.I3LoggingUtils.html#I3V3_LoggingHelpers_I3LoggingUtils_GetLogEventType_
+  commentId: Overload:I3V3.LoggingHelpers.I3LoggingUtils.GetLogEventType
+  isSpec: "True"
+  fullName: I3V3.LoggingHelpers.I3LoggingUtils.GetLogEventType
+  nameWithType: I3LoggingUtils.GetLogEventType
+- uid: I3V3.LoggingHelpers.LoggingServerStatusChangedDeletate
+  name: LoggingServerStatusChangedDeletate
+  href: api/I3V3.LoggingHelpers.LoggingServerStatusChangedDeletate.html
+  commentId: T:I3V3.LoggingHelpers.LoggingServerStatusChangedDeletate
+  fullName: I3V3.LoggingHelpers.LoggingServerStatusChangedDeletate
+  nameWithType: LoggingServerStatusChangedDeletate
 - uid: Lost
   name: Lost
   href: api/Lost.html
