@@ -98,7 +98,7 @@ Subelements of an element are represented as C# properties of the class associat
 # The pos Element and the Position Class
 The pos element represents individual points in other location subelements of the location-info element. For example, a Point element contains a single pos element. A Circle element contains a pos element that defines the location of the center of a circle.
 
-The pos element is defined as a string list of double precision numbers in the XML schema defination. Values are separated by a single space. The string contains latitude, longitude and potentially elevation information. A pos element for a point in two dimensions will look like:
+The pos element is defined as a string list of double precision numbers in the XML schema definition. Values are separated by a single space. The string contains latitude, longitude and potentially elevation information. A pos element for a point in two dimensions will look like:
 
 ```
 <pos>42.5463 -73.2512</pos>
