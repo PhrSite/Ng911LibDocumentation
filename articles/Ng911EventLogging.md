@@ -137,15 +137,15 @@ public class MyClass
         I3LogEventClient Client1 = new I3LogEventClient(strUrl1, "LoggingServer1", clientCert);
         I3LogEventClient Client2 = new I3LogEventClient(strUrl2, "LoggingServer2", clientCert);
 
-		I3LogEventClientMgr ClientMgr = new I3LogEventClientMgr();
-		ClientMgr.AddLoggingClient(Client1);
+        I3LogEventClientMgr ClientMgr = new I3LogEventClientMgr();
+        ClientMgr.AddLoggingClient(Client1);
         ClientMgr.AddLoggingClient(Client2);
 
         // Hook the events if desired
         ClientMgr.LoggingServerStatusChanged += OnLoggingServerStatusChanged;
         ClientMgr.LoggingServerError += OnLoggingServerError;
 
-		// Start all logging clients
+        // Start all logging clients
         ClientMgr.Start();
         return ClientMgr;
     }

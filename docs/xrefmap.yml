@@ -17871,6 +17871,19 @@ references:
   isSpec: "True"
   fullName: I3V3.LogEvents.SubscriptionTerminatedLogEvent.peerId
   nameWithType: SubscriptionTerminatedLogEvent.peerId
+- uid: I3V3.LogEvents.SubscriptionTerminatedLogEvent.queryId
+  name: queryId
+  href: api/I3V3.LogEvents.SubscriptionTerminatedLogEvent.html#I3V3_LogEvents_SubscriptionTerminatedLogEvent_queryId
+  commentId: P:I3V3.LogEvents.SubscriptionTerminatedLogEvent.queryId
+  fullName: I3V3.LogEvents.SubscriptionTerminatedLogEvent.queryId
+  nameWithType: SubscriptionTerminatedLogEvent.queryId
+- uid: I3V3.LogEvents.SubscriptionTerminatedLogEvent.queryId*
+  name: queryId
+  href: api/I3V3.LogEvents.SubscriptionTerminatedLogEvent.html#I3V3_LogEvents_SubscriptionTerminatedLogEvent_queryId_
+  commentId: Overload:I3V3.LogEvents.SubscriptionTerminatedLogEvent.queryId
+  isSpec: "True"
+  fullName: I3V3.LogEvents.SubscriptionTerminatedLogEvent.queryId
+  nameWithType: SubscriptionTerminatedLogEvent.queryId
 - uid: I3V3.LogEvents.SubscriptionTerminatedLogEvent.reason
   name: reason
   href: api/I3V3.LogEvents.SubscriptionTerminatedLogEvent.html#I3V3_LogEvents_SubscriptionTerminatedLogEvent_reason
