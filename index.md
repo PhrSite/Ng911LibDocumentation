@@ -38,7 +38,7 @@ Many of the schemas used in NG9-1-1 are specified by standards produced by the I
 | Pidf | RFC 4119, RFC 5491 and others. See [Working with PIDF-LO Data](~/articles/WorkingwithPIDF-LOData.md) | Data/model and utility classes for dealing with location data in NG9-1-1 applications |
 | SipRecMetaData | RFC 7865 Session Initiation Protocol (SIP) Recording Metadata | Data/model classes for dealing with the meta data XML document used in the SIP Session Recording (SIPREC) protocol |
 | ECall | RFC 8147 Next-Generation Pan-European eCall | Model classes that implement the control and meta-data schemas defined in RFC 8147. Note: These classes do not support the European Minimum Set Data (MSD). |
-| Veds | RFC 8148 Next-Generation Vehicle-Initiated Emergency Calls, Advanced Automatic Collision Notification (AACN) Vehicle Emergency Data Set (VEDS) [APCO/NENA Candidate ANS 2.102.1.2022](https://www.apcointl.org/~documents/standard/21021-2022-aacn-vehicle-data-set-veds) | Data/Model classes for the Vehicle Emergency Data Set (VEDS) used in NG9-1-1 Advanced Automatic Crash Notification (AACN) calls |
+| Veds | RFC 8148 Next-Generation Vehicle-Initiated Emergency Calls, Advanced Automatic Collision Notification (AACN) Vehicle Emergency Data Set (VEDS) [APCO/NENA Candidate ANS 2.102.1.2022](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/apco_nena_ans_2.102.1-2022_a.pdf) | Data/Model classes for the Vehicle Emergency Data Set (VEDS) used in NG9-1-1 Advanced Automatic Crash Notification (AACN) calls |
 
 
 
